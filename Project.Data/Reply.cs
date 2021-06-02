@@ -11,9 +11,13 @@ namespace Project.Data
     public class Reply
     {
         [Key]
-        [ForeignKey(nameof(Comment))]
         public int Id { get; set; }
-        public virtual Comment Comment { get; set; }
+
+        [Required]
+        public int CommentId { get; set; }
+
+        [ForeignKey(nameof(CommentId))]
+        public virtual List<Comment> Comments  { get; set; }
         [Required]
         public string Text { get; set; }
         [Required]

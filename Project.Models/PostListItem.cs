@@ -5,22 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Data
+namespace Project.Models
 {
-    public class Post
+    public class PostListItem
     {
-        [Key]
         public int PostId { get; set; }
-        [Required]
         public string Title { get; set; }
-        [Required]
         public string Text { get; set; }
-        public virtual List<Comment> Comments { get; set; }
-        [Required]
-        public Guid AuthorId { get; set; }
-
-        [Required]
+        [Display(Name="Created")]
         public DateTimeOffset Created { get; set; }
-        public DateTimeOffset? Modified { get; set; }
     }
 }
