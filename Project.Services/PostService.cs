@@ -50,48 +50,12 @@ namespace Project.Services
                                 {
                                     PostId = e.PostId,
                                     Title = e.Title,
+                                    Text = e.Text,
                                     Created = e.Created
                                 }
                                 );
 
                 return query.ToArray();
-            }
-        }
-
-        public PostDetail GetPostById(int id)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                    .Posts
-                    .Single(e => e.PostId == id && e.AuthorId == _userId);
-                return
-                    new PostDetail
-                    {
-                        PostId = entity.PostId,
-                        Title = entity.Title,
-                        Text = entity.Text,
-                        CreatedUtc = entity.Created,
-                        ModifiedUtc = entity.Modified
-                    };
-            }
-        }
-
-        public bool UpdatePost(PostEdit model)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                    .Posts
-                    .Single(e => e.PostId == model.PostId && e.AuthorId == _userId);
-
-                entity.Title = model.Title;
-                entity.Text = model.Text;
-                entity.Modified = DateTimeOffset.UtcNow;
-
-                return ctx.SaveChanges() == 1;
             }
         }
 
