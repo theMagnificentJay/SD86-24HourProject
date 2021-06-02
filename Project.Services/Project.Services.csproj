@@ -55,10 +55,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommentService.cs" />
+    <Compile Include="ReplyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Data\Project.Data.csproj">
+      <Project>{a4bfcbea-ec74-4772-b47a-e01a1407802a}</Project>
+      <Name>Project.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

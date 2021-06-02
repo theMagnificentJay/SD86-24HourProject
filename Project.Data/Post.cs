@@ -15,7 +15,7 @@ namespace Project.Data
         public string Title { get; set; }
         [Required]
         public string Text { get; set; }
-        public virtual Comment Comment { get; set; }
+        public virtual List<Comment> Comments { get; set; }
         [Required]
         public Guid AuthorId { get; set; }
 

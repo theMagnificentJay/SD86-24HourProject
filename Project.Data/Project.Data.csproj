@@ -89,6 +89,8 @@
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reply.cs" />
+    <Compile Include="CommentRepository.cs" />
+    <Compile Include="ReplyRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

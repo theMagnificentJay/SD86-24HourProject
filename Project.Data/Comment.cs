@@ -11,11 +11,17 @@ namespace Project.Data
     public class Comment
     {
         [Key]
-        [ForeignKey(nameof(Post))]
         public int Id { get; set; }
+
+        [Required]
+        public int PostId { get; set; }
+
+        [ForeignKey(nameof(PostId))]
         public virtual Post Post { get; set; }
         [Required]
         public string Text { get; set; }
+        public virtual List<Reply> Replies { get; set; }
+
         [Required]
         public Guid AuthorId { get; set; }
 
