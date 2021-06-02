@@ -40,6 +40,6 @@ Currently this section is broken, and still a WIP. It is requiring an AuthorId a
 
 ## Authors
 
-[![theMagnificentJay](https://img.shields.io/static/v1?label=&message=theMagnificentJay&color=black)](https://themagnificentjay.github.io/portfolio/)
+[![theMagnificentJay](https://img.shields.io/static/v1?label=&message=theMagnificentJay&color=black)](https://github.com/theMagnificentJay)
 [![theMagnificentJay](https://img.shields.io/static/v1?label=&message=RJYocham&color=blue)](https://github.com/RJYocham)
 [![theMagnificentJay](https://img.shields.io/static/v1?label=&message=D2-Tech&color=red)](https://github.com/D2-Tech)
