@@ -10,6 +10,9 @@
 
 This assignment is a 24 hour project. Utilizing skills for team git fundamentals and a basic social-media-esque API.
 
+### Note
+Post works, comment gives error saying AuthorId and Created (DateTime) is required and does not post comment. Reply, while structured at this stage has the same errors as comment. We apologize for the inconvience.
+
 ## Authors
 
 ![theMagnificentJay](https://img.shields.io/static/v1?label=&message=theMagnificentJay&color=black)
