@@ -54,6 +54,7 @@ namespace Project.Services
                                     Created = e.Created
                                 }
                         );
+                return query.ToArray();
             }
         }
     }
